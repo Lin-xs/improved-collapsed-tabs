@@ -1,13 +1,14 @@
+
 @property --tab-indicator-color {
 	syntax: "<color>";
 	inherits: false;
-	initial-value: "";/*light-dark(#444444, #dddddd);*/
+	initial-value: ""; /* skip if gradient */
 }
 
 @property --tab-indicator-gradient {
 	syntax: "<image>";
 	inherits: false;
-	initial-value: "";/*linear-gradient(#444444, #dddddd);*/
+	initial-value: ""; /* not needed */
 }
 
 :root {
