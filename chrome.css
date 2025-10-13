@@ -1,11 +1,18 @@
 @property --tab-indicator-color {
 	syntax: "<color>";
 	inherits: false;
-	initial-value: light-dark(#444444, #dddddd);
+	initial-value: "";/*light-dark(#444444, #dddddd);*/
+}
+
+@property --tab-indicator-gradient {
+	syntax: "<image>";
+	inherits: false;
+	initial-value: "";/*linear-gradient(#444444, #dddddd);*/
 }
 
 :root {
 	--tab-indicator-width: 4px;
+	--tab-indicator-mix: #999999;
 }
 
 @media not (-moz-bool-pref: "zen.view.sidebar-expanded") {
@@ -17,11 +24,27 @@
   /* active tab side indicator */
   .tab-background[selected=""]::after {
     --tab-indicator-color: light-dark(color-mix(in oklab, var(--zen-main-browser-background) 70%, #000000), color-mix(in oklab, var(--zen-main-browser-background) 40%, #ffffff));
+    --tab-indicator-gradient: var(--zen-main-browser-background);
     content: "";
     position: absolute;
     width: var(--uc-theme-tab_indicator-width);
     height: 100%;
     background-color: var(--uc-theme-tab_indicator-color); /* config active tab side strip color */
+    background-image: var(--uc-theme-tab_indicator-gradient), linear-gradient(var(--tab-indicator-mix));
+  }
+  
+  #main-window[zen-should-be-dark-mode="true"] {
+    .tab-background::after {
+      background-blend-mode: lighten;
+      --tab-indicator-mix: #999999;
+    }
+  }
+  
+  #main-window[zen-should-be-dark-mode="false"] {
+    .tab-background::after {
+      background-blend-mode: darken;
+      --tab-indicator-mix: #666666;
+    }
   }
   
   /* remove tab close button */
@@ -75,15 +98,17 @@
     &:is([soundplaying], [muted]) {
 		  .tab-background::after {
 		    --tab-indicator-color: light-dark(color-mix(in oklab, var(--zen-main-browser-background) 70%, #000000), color-mix(in oklab, var(--zen-main-browser-background) 40%, #ffffff));
+		    --tab-indicator-gradient: var(--zen-main-browser-background);
 			  content:"";
 			  position: absolute;
-			  width: var(--tab-indicator-width) !important;
-			  border-radius: var(--uc-theme-tab_indicator-width) !important;
+			  width: var(--uc-theme-tab_indicator-width) !important;
+			  border-radius: 4px !important;
 			  height: 50% !important;
 			  top: 50%;
 			  left: calc(100% - var(--uc-theme-tab_indicator-width)) !important;
 			  transform: translateY(-50%);
 			  background-color: var(--uc-theme-tab_indicator-color) !important;
+			  background-image: var(--uc-theme-tab_indicator-gradient), linear-gradient(var(--tab-indicator-mix)) !important;
 		  }
 
 		  &:not([selected='true']) .tab-background::after{

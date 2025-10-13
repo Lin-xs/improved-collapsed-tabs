@@ -19,6 +19,13 @@
         "placeholder": "#0000ff"
     },
     {
+        "property": "uc.theme.tab_indicator.gradient",
+        "label": "Tab Indicator Gradient (if theme uses gradients):",
+        "type": "string",
+        "defaultValue": "var(--tab-indicator-gradient)",
+        "placeholder": "linear-gradient(#444444, #dddddd)"
+    },
+    {
         "property": "uc.theme.tab_indicator.width",
         "label": "Tab Indicator Width:",
         "type": "string",
