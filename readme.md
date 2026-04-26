@@ -1,5 +1,7 @@
 # Improved Collapsed Tabs
 
+[English](readme.md) | [中文](README.zh-CN.md)
+
 The changes only affect the browser if the sidebar is collapsed.
 
 Content:
