@@ -26,6 +26,31 @@
         "placeholder": "16px"
     },
     {
+        "property": "uc.theme.tab-close-button.position",
+        "label": "Tab Close Button Position:",
+        "type": "dropdown",
+        "defaultValue": "0 auto auto 0",
+        "options": [
+            {
+                "label": "Top left",
+                "value": "0 auto auto 0"
+            },
+            {
+                "label": "Top right",
+                "value": "0 0 auto auto"
+            },
+            {
+                "label": "Bottom left",
+                "value": "auto auto 0 0"
+            },
+            {
+                "label": "Bottom right",
+                "value": "auto 0 0 auto"
+            }
+        ],
+        "disabledOn": []
+    },
+    {
         "property": "uc.theme.comptitle.width",
         "label": "Tab Title Width:",
         "type": "string",

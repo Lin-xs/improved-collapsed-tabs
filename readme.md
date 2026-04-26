@@ -16,6 +16,7 @@ Content:
  - show titles in pinned and essential tabs as well
  - hide tabs' 'x' button
  - select tabs' 'x' button size
+ - select tabs' 'x' button position
  - select tab title width
  - select tab title height
  - select tab title font size

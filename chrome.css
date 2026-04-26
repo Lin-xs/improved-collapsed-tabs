@@ -57,9 +57,12 @@
 
   /* configure tab close button size */
   image.tab-close-button {
+    position: absolute !important;
+    inset: var(--uc-theme-tab-close-button-position) !important;
     width: var(--uc-theme-tab-close-button-size) !important;
     height: var(--uc-theme-tab-close-button-size) !important;
     min-width: var(--uc-theme-tab-close-button-size) !important;
+    z-index: 1;
   }
   
   /* remove audio icon if sound plays */
@@ -73,6 +76,8 @@
   }
   
   .tabbrowser-tab {
+    position: relative;
+
     /* restore tab title and show a configurable number of characters */
     .tab-label-container {
       --comptitle-width: var(--uc-theme-comptitle-width);
