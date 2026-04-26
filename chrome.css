@@ -237,7 +237,7 @@
     > .tab-group-label-container {
       position: relative;
 
-      > label {
+      > :is(label, .tab-group-label, #tab-label-input) {
         --comptitle-width: var(--uc-theme-comptitle-width);
         overflow: hidden !important;
         position: absolute !important;
@@ -261,8 +261,8 @@
       }
     }
 
-    &[selected] > .tab-group-label-container > label,
-    &[has-active] > .tab-group-label-container > label {
+    &[selected] > .tab-group-label-container > :is(label, .tab-group-label, #tab-label-input),
+    &[has-active] > .tab-group-label-container > :is(label, .tab-group-label, #tab-label-input) {
       color: var(--text-color);
       background: light-dark(var(--tab-selected-bgcolor), var(--zen-main-browser-background));
     }
@@ -274,7 +274,7 @@
     }
 
     @media not (-moz-bool-pref: "uc.theme.comptitle-position-bottom.enabled") {
-      > .tab-group-label-container > label {
+      > .tab-group-label-container > :is(label, .tab-group-label, #tab-label-input) {
         top: 0;
         bottom: auto;
       }
