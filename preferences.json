@@ -36,7 +36,7 @@
         "property": "uc.theme.comptitle.border-radius",
         "label": "Tab Title Border Radius:",
         "type": "string",
-        "defaultValue": "0",
+        "defaultValue": "0px",
         "placeholder": "5px"
     },
     {
