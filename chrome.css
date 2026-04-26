@@ -78,12 +78,20 @@
       background: var(--zen-main-browser-background); /* tab title bg color */
       height: 1rem !important;
       opacity: 1;
-      top: 0;
+      bottom: 0;
       border-radius: 5px;
       font-family: monospace;
       display: flex !important;
       mask-image: none !important;
       color: var(--text-color-deemphasized); /* tab title color */
+    }
+
+    /* show tab title at the top instead */
+    @media not (-moz-bool-pref: "uc.theme.comptitle-position-bottom.enabled") {
+      .tab-label-container {
+        top: 0;
+        bottom: auto;
+      }
     }
 
     /* remove the "Playing" subtitle */

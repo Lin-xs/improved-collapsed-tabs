@@ -26,6 +26,13 @@
         "placeholder": "3ch"
     },
     {
+        "property": "uc.theme.comptitle-position-bottom.enabled",
+        "label": "Show tab title at bottom",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": []
+    },
+    {
         "property": "uc.theme.tab_indicator.color",
         "label": "Tab Indicator Color:",
         "type": "string",
