@@ -58,7 +58,7 @@
   /* configure tab close button size */
   image.tab-close-button {
     position: absolute !important;
-    inset: var(--uc-theme-tab-close-button-position) !important;
+    inset: var(--uc-theme-tab-close-button-position, 0 auto auto 0) !important;
     width: var(--uc-theme-tab-close-button-size) !important;
     height: var(--uc-theme-tab-close-button-size) !important;
     min-width: var(--uc-theme-tab-close-button-size) !important;

@@ -29,6 +29,7 @@
         "property": "uc.theme.tab-close-button.position",
         "label": "Tab Close Button Position:",
         "type": "dropdown",
+        "processAs": "var",
         "defaultValue": "0 auto auto 0",
         "options": [
             {
