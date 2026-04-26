@@ -14,6 +14,7 @@ Content:
  Settings include:
  - emphasize only selected tab title
  - show titles in pinned and essential tabs as well
+ - auto-hide toolbar in collapsed sidebar mode
  - hide tabs' 'x' button
  - select tabs' 'x' button size
  - select tabs' 'x' button position

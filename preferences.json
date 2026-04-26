@@ -12,6 +12,13 @@
         "disabledOn": []
     },
     {
+        "property": "uc.theme.hide-toolbar-collapsed-sidebar.enabled",
+        "label": "Auto-hide toolbar in collapsed sidebar mode",
+        "type": "checkbox",
+        "defaultValue": false,
+        "disabledOn": []
+    },
+    {
         "property": "uc.theme.hide-tab-close-button.enabled",
         "label": "Hide tab close button",
         "type": "checkbox",

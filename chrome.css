@@ -48,6 +48,77 @@
     }
   }
 
+  /* auto-hide toolbar while Zen's sidebar is collapsed */
+  @media (-moz-bool-pref: "uc.theme.hide-toolbar-collapsed-sidebar.enabled") {
+    #zen-appcontent-wrapper {
+      position: relative !important;
+    }
+
+    #zen-appcontent-navbar-wrapper {
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      height: var(--zen-toolbar-height-with-bookmarks) !important;
+      overflow: visible !important;
+      z-index: 10 !important;
+      pointer-events: auto;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+
+    #zen-appcontent-navbar-wrapper .zen-toolbar-background {
+      display: flex !important;
+      position: absolute !important;
+      inset: 0 !important;
+      background: var(--zen-main-browser-background-toolbar, var(--zen-main-browser-background)) !important;
+      opacity: 0 !important;
+      z-index: 0 !important;
+      pointer-events: none !important;
+      transition: opacity var(--zen-hidden-toolbar-transition) !important;
+    }
+
+    #zen-appcontent-navbar-wrapper .zen-toolbar-background::before,
+    #zen-appcontent-navbar-wrapper .zen-toolbar-background::after {
+      opacity: 1 !important;
+    }
+
+    #zen-appcontent-navbar-wrapper #zen-appcontent-navbar-container {
+      position: relative !important;
+      z-index: 1 !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      transition: opacity var(--zen-hidden-toolbar-transition) !important;
+    }
+
+    #zen-appcontent-navbar-wrapper #urlbar:not([breakout-extend="true"]) {
+      opacity: 0 !important;
+      pointer-events: none !important;
+      transition: opacity var(--zen-hidden-toolbar-transition) !important;
+    }
+
+    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) {
+      overflow: visible !important;
+      background: var(--zen-main-browser-background-toolbar, var(--zen-main-browser-background)) !important;
+      box-shadow: var(--zen-big-shadow) !important;
+    }
+
+    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) .zen-toolbar-background,
+    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) #zen-appcontent-navbar-container {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+
+    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) #urlbar {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+
+    #tabbrowser-tabpanels[has-toolbar-hovered] .browserSidebarContainer:is(.deck-selected, [zen-split="true"]) .browserContainer {
+      margin-top: 0 !important;
+    }
+  }
+
   /* remove tab close button */
   @media (-moz-bool-pref: "uc.theme.hide-tab-close-button.enabled") {
     image.tab-close-button {
