@@ -12,6 +12,20 @@
         "disabledOn": []
     },
     {
+        "property": "uc.theme.hide-tab-close-button.enabled",
+        "label": "Hide tab close button",
+        "type": "checkbox",
+        "defaultValue": true,
+        "disabledOn": []
+    },
+    {
+        "property": "uc.theme.comptitle.width",
+        "label": "Tab Title Width:",
+        "type": "string",
+        "defaultValue": "3ch",
+        "placeholder": "3ch"
+    },
+    {
         "property": "uc.theme.tab_indicator.color",
         "label": "Tab Indicator Color:",
         "type": "string",

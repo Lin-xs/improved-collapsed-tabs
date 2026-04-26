@@ -47,10 +47,12 @@
       --tab-indicator-mix: #666666;
     }
   }
-  
+
   /* remove tab close button */
-  image.tab-close-button {
-    display: none !important;
+  @media (-moz-bool-pref: "uc.theme.hide-tab-close-button.enabled") {
+    image.tab-close-button {
+      display: none !important;
+    }
   }
   
   /* remove audio icon if sound plays */
@@ -64,9 +66,9 @@
   }
   
   .tabbrowser-tab {
-    /* restore tab title and show the first 3 letters */
+    /* restore tab title and show a configurable number of characters */
     .tab-label-container {
-      --comptitle-width: 3ch;
+      --comptitle-width: var(--uc-theme-comptitle-width);
       overflow: hidden;
       position: absolute;
       text-overflow: ellipsis;
