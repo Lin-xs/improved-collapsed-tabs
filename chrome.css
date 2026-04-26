@@ -230,4 +230,54 @@
       }
     }
   }
+
+  zen-folder {
+    position: relative;
+
+    > .tab-group-label-container {
+      position: relative;
+
+      > label {
+        --comptitle-width: var(--uc-theme-comptitle-width);
+        overflow: hidden !important;
+        position: absolute !important;
+        text-overflow: ellipsis !important;
+        width: var(--comptitle-width) !important;
+        right: 0;
+        white-space: nowrap !important;
+        visibility: visible !important;
+        background: var(--zen-main-browser-background);
+        height: var(--uc-theme-comptitle-height) !important;
+        opacity: 1 !important;
+        bottom: 0;
+        border-radius: var(--uc-theme-comptitle-border-radius);
+        font-family: var(--uc-theme-comptitle-font-family);
+        font-size: var(--uc-theme-comptitle-font-size);
+        display: flex !important;
+        align-items: center;
+        padding: 0 !important;
+        mask-image: none !important;
+        color: var(--text-color-deemphasized);
+      }
+    }
+
+    &[selected] > .tab-group-label-container > label,
+    &[has-active] > .tab-group-label-container > label {
+      color: var(--text-color);
+      background: light-dark(var(--tab-selected-bgcolor), var(--zen-main-browser-background));
+    }
+
+    .tab-group-container > .tabbrowser-tab .tab-label-container {
+      visibility: visible !important;
+      opacity: 1 !important;
+      width: var(--uc-theme-comptitle-width) !important;
+    }
+
+    @media not (-moz-bool-pref: "uc.theme.comptitle-position-bottom.enabled") {
+      > .tab-group-label-container > label {
+        top: 0;
+        bottom: auto;
+      }
+    }
+  }
 }
