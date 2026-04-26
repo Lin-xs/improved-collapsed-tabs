@@ -1,0 +1,19 @@
+{
+    "id": "improved-collapsed-tabs",
+    "homepage": "https://github.com/Lin-xs/improved-collapsed-tabs",
+    "author": "Lin-xs",
+    "name": "Improved Collapsed Tabs",
+    "description": "Improves collapsed sidebar tabs with configurable title labels, indicators, and close button behavior.",
+    "version": "1.1.0",
+    "style": "chrome.css",
+    "preferences": "preferences.json",
+    "readme": "readme.md",
+    "tags": [
+        "chrome",
+        "tabs",
+        "zen"
+    ],
+    "fork": [
+        "zen"
+    ]
+}

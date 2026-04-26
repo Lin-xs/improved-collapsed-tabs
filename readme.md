@@ -15,6 +15,7 @@ Content:
  - hide tabs' 'x' button
  - select tabs' 'x' button size
  - select tab title width
+ - select tab title border radius
  - show tab title at bottom
  - select indicator color
  - select indicator width

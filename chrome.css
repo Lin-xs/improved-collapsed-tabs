@@ -86,7 +86,7 @@
       height: 1rem !important;
       opacity: 1;
       bottom: 0;
-      border-radius: 5px;
+      border-radius: var(--uc-theme-comptitle-border-radius);
       font-family: monospace;
       display: flex !important;
       mask-image: none !important;

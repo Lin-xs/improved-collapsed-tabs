@@ -33,6 +33,13 @@
         "placeholder": "3ch"
     },
     {
+        "property": "uc.theme.comptitle.border-radius",
+        "label": "Tab Title Border Radius:",
+        "type": "string",
+        "defaultValue": "0",
+        "placeholder": "5px"
+    },
+    {
         "property": "uc.theme.comptitle-position-bottom.enabled",
         "label": "Show tab title at bottom",
         "type": "checkbox",
