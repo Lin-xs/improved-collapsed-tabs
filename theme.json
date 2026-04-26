@@ -4,7 +4,7 @@
     "author": "Lin-xs",
     "name": "Improved Collapsed Tabs",
     "description": "Improves collapsed sidebar tabs with configurable title labels, indicators, and close button behavior.",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "style": "chrome.css",
     "preferences": "preferences.json",
     "readme": "readme.md",

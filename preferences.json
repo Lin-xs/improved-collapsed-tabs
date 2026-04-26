@@ -31,6 +31,7 @@
         "type": "dropdown",
         "processAs": "var",
         "defaultValue": "0 auto auto 0",
+        "placeholder": false,
         "options": [
             {
                 "label": "Top left",
