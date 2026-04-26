@@ -19,6 +19,13 @@
         "disabledOn": []
     },
     {
+        "property": "uc.theme.tab-close-button.size",
+        "label": "Tab Close Button Size:",
+        "type": "string",
+        "defaultValue": "16px",
+        "placeholder": "16px"
+    },
+    {
         "property": "uc.theme.comptitle.width",
         "label": "Tab Title Width:",
         "type": "string",

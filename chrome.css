@@ -54,6 +54,13 @@
       display: none !important;
     }
   }
+
+  /* configure tab close button size */
+  image.tab-close-button {
+    width: var(--uc-theme-tab-close-button-size) !important;
+    height: var(--uc-theme-tab-close-button-size) !important;
+    min-width: var(--uc-theme-tab-close-button-size) !important;
+  }
   
   /* remove audio icon if sound plays */
   .tab-icon-overlay:is([soundplaying], [muted], [activemedia-blocked]) {

@@ -13,6 +13,7 @@ Content:
  - emphasize only selected tab title
  - show titles in pinned and essential tabs as well
  - hide tabs' 'x' button
+ - select tabs' 'x' button size
  - select tab title width
  - show tab title at bottom
  - select indicator color
