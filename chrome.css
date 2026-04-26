@@ -83,12 +83,14 @@
       right: 0;
       white-space: nowrap;
       background: var(--zen-main-browser-background); /* tab title bg color */
-      height: 1rem !important;
+      height: var(--uc-theme-comptitle-height) !important;
       opacity: 1;
       bottom: 0;
       border-radius: var(--uc-theme-comptitle-border-radius);
       font-family: monospace;
+      font-size: var(--uc-theme-comptitle-font-size);
       display: flex !important;
+      align-items: center;
       mask-image: none !important;
       color: var(--text-color-deemphasized); /* tab title color */
     }

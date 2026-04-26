@@ -33,6 +33,20 @@
         "placeholder": "3ch"
     },
     {
+        "property": "uc.theme.comptitle.height",
+        "label": "Tab Title Height:",
+        "type": "string",
+        "defaultValue": "1.2rem",
+        "placeholder": "1.2rem"
+    },
+    {
+        "property": "uc.theme.comptitle.font-size",
+        "label": "Tab Title Font Size:",
+        "type": "string",
+        "defaultValue": "0.85rem",
+        "placeholder": "0.85rem"
+    },
+    {
         "property": "uc.theme.comptitle.border-radius",
         "label": "Tab Title Border Radius:",
         "type": "string",
