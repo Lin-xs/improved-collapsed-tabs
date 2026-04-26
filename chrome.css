@@ -87,7 +87,7 @@
       opacity: 1;
       bottom: 0;
       border-radius: var(--uc-theme-comptitle-border-radius);
-      font-family: monospace;
+      font-family: var(--uc-theme-comptitle-font-family);
       font-size: var(--uc-theme-comptitle-font-size);
       display: flex !important;
       align-items: center;

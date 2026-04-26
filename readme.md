@@ -19,6 +19,7 @@ Content:
  - select tab title width
  - select tab title height
  - select tab title font size
+ - select tab title font family
  - select tab title border radius
  - show tab title at bottom
  - select indicator color

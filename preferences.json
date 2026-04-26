@@ -47,6 +47,13 @@
         "placeholder": "0.85rem"
     },
     {
+        "property": "uc.theme.comptitle.font-family",
+        "label": "Tab Title Font Family:",
+        "type": "string",
+        "defaultValue": "inherit",
+        "placeholder": "monospace"
+    },
+    {
         "property": "uc.theme.comptitle.border-radius",
         "label": "Tab Title Border Radius:",
         "type": "string",
