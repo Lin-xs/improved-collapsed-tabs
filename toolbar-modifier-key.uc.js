@@ -1,4 +1,6 @@
 (function () {
+  const Services =
+    globalThis.Services ?? ChromeUtils.importESModule("resource://gre/modules/Services.sys.mjs").Services;
   const prefName = "uc.theme.toolbar-float.modifier-key";
   const activeAttribute = "uc-theme-toolbar-key-active";
 
@@ -10,7 +12,7 @@
   }
 
   function isConfiguredModifier(event) {
-    return event.key === modifierKey;
+    return event.key === modifierKey || event.getModifierState(modifierKey);
   }
 
   function onKeyDown(event) {
@@ -20,7 +22,7 @@
   }
 
   function onKeyUp(event) {
-    if (isConfiguredModifier(event)) {
+    if (event.key === modifierKey || !event.getModifierState(modifierKey)) {
       document.documentElement.removeAttribute(activeAttribute);
     }
   }

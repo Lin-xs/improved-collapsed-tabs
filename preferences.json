@@ -45,6 +45,10 @@
         "disabledOn": []
     },
     {
+        "type": "text",
+        "label": "Note: the modifier key requires this mod's JS script. If installing directly from GitHub in Sine, enable sine.allow-unsafe-js or install from the Sine store."
+    },
+    {
         "property": "uc.theme.hide-tab-close-button.enabled",
         "label": "Hide tab close button",
         "type": "checkbox",

@@ -27,3 +27,5 @@ Content:
  - show tab title at bottom
  - select indicator color
  - select indicator width
+
+Note: the floating toolbar modifier key uses a small JS script. If installing directly from GitHub in Sine, enable `sine.allow-unsafe-js` or install the mod from the Sine store so the script can load.
