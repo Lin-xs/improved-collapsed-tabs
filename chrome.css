@@ -62,9 +62,14 @@
       height: var(--zen-toolbar-height-with-bookmarks) !important;
       overflow: visible !important;
       z-index: 10 !important;
-      pointer-events: auto;
+      pointer-events: none;
       background: transparent !important;
       box-shadow: none !important;
+    }
+
+    :root[uc-theme-toolbar-key-active] #zen-appcontent-navbar-wrapper,
+    #zen-appcontent-navbar-wrapper:is(:focus-within, [has-popup-menu], [zen-compact-mode-active]) {
+      pointer-events: auto;
     }
 
     #zen-appcontent-navbar-wrapper .zen-toolbar-background {
