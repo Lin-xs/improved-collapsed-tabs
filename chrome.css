@@ -97,19 +97,23 @@
       transition: opacity var(--zen-hidden-toolbar-transition) !important;
     }
 
-    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) {
+    :root[uc-theme-toolbar-key-active] #zen-appcontent-navbar-wrapper:is(:hover, [zen-has-hover]),
+    #zen-appcontent-navbar-wrapper:is(:focus-within, [has-popup-menu], [zen-compact-mode-active]) {
       overflow: visible !important;
       background: var(--zen-main-browser-background-toolbar, var(--zen-main-browser-background)) !important;
       box-shadow: var(--zen-big-shadow) !important;
     }
 
-    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) .zen-toolbar-background,
-    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) #zen-appcontent-navbar-container {
+    :root[uc-theme-toolbar-key-active] #zen-appcontent-navbar-wrapper:is(:hover, [zen-has-hover]) .zen-toolbar-background,
+    :root[uc-theme-toolbar-key-active] #zen-appcontent-navbar-wrapper:is(:hover, [zen-has-hover]) #zen-appcontent-navbar-container,
+    #zen-appcontent-navbar-wrapper:is(:focus-within, [has-popup-menu], [zen-compact-mode-active]) .zen-toolbar-background,
+    #zen-appcontent-navbar-wrapper:is(:focus-within, [has-popup-menu], [zen-compact-mode-active]) #zen-appcontent-navbar-container {
       opacity: 1 !important;
       pointer-events: auto !important;
     }
 
-    #zen-appcontent-navbar-wrapper:is(:hover, :focus-within, [zen-has-hover], [has-popup-menu], [zen-compact-mode-active]) #urlbar {
+    :root[uc-theme-toolbar-key-active] #zen-appcontent-navbar-wrapper:is(:hover, [zen-has-hover]) #urlbar,
+    #zen-appcontent-navbar-wrapper:is(:focus-within, [has-popup-menu], [zen-compact-mode-active]) #urlbar {
       opacity: 1 !important;
       pointer-events: auto !important;
     }

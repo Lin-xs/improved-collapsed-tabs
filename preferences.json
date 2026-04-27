@@ -19,6 +19,32 @@
         "disabledOn": []
     },
     {
+        "property": "uc.theme.toolbar-float.modifier-key",
+        "label": "Toolbar floating modifier key:",
+        "type": "dropdown",
+        "defaultValue": "Alt",
+        "placeholder": false,
+        "options": [
+            {
+                "label": "Alt / Option",
+                "value": "Alt"
+            },
+            {
+                "label": "Ctrl",
+                "value": "Control"
+            },
+            {
+                "label": "Shift",
+                "value": "Shift"
+            },
+            {
+                "label": "Command / Meta",
+                "value": "Meta"
+            }
+        ],
+        "disabledOn": []
+    },
+    {
         "property": "uc.theme.hide-tab-close-button.enabled",
         "label": "Hide tab close button",
         "type": "checkbox",

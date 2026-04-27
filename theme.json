@@ -4,10 +4,19 @@
     "author": "Lin-xs",
     "name": "Improved Collapsed Tabs",
     "description": "Improves collapsed sidebar tabs with configurable title labels, indicators, and close button behavior.",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "style": "chrome.css",
     "preferences": "preferences.json",
     "readme": "readme.md",
+    "scripts": {
+        "toolbar-modifier-key.uc.js": {
+            "name": "Toolbar floating modifier key",
+            "description": "Tracks the configured modifier key used to reveal the floating toolbar.",
+            "include": [
+                "chrome://browser/content/browser.xhtml"
+            ]
+        }
+    },
     "tags": [
         "chrome",
         "tabs",
