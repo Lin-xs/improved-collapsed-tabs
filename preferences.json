@@ -46,7 +46,7 @@
     },
     {
         "type": "text",
-        "label": "Note: the modifier key requires this mod's JS script. If installing directly from GitHub in Sine, enable sine.allow-unsafe-js or install from the Sine store."
+        "label": "Note: the modifier key requires this mod's JS script. If installing directly from GitHub in Sine, add a boolean value sine.allow-unsafe-js in about:config and set it to true."
     },
     {
         "property": "uc.theme.hide-tab-close-button.enabled",
